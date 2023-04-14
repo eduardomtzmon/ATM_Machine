@@ -45,7 +45,7 @@ function withdraw() {
     if (user.saldo < 10) {
       newSaldoShow.textContent = "Tu saldo es menor a 10, imposible mostrar"
     } else {
-      newSaldoShow.textContent = `Tu nuevo saldo es $${user.saldo}`
+      newSaldoShow.textContent = `Se retiró $${amount} de tu cuenta, tu nuevo saldo es $${user.saldo}`
       
     }
     newSaldoShow.classList.remove("hidden")
@@ -71,7 +71,7 @@ function deposit() {
     if (user.saldo > 990) {
       newSaldoShow.textContent = "Tu saldo excede los 990, imposible mostrar"
     } else {
-      newSaldoShow.textContent = `Tu nuevo saldo es $${user.saldo}`
+      newSaldoShow.textContent = `Se depositó $${amount} de tu cuenta, tu nuevo saldo es $${user.saldo}`
     }
     
     newSaldoShow.classList.remove("hidden")
