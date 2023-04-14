@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU PRINCIPAL</title>
+    <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 class="welcome_title">MENU PRINCIPAL</h1>
+    <h1 class="que_deseas_hacer">¿Qué deseas hacer?</h1>
+    <div class="menu_options">
+        <button class="btn_consulta btn_menu">CONSULTAR SALDO</button>
+        <button class="btn_depositar btn_menu">DEPOSITAR SALDO</button>
+        <button class="btn_retirar btn_menu">RETIRAR SALDO</button>
+    </div>
+
+    <div class="modal_consult hidden modal">
+        <button class="close_modal">&times;</button>
+        <h2>CONSULTA DE SALDO</h2>
+        <p>
+            Tu saldo actual es:
+        </p>
+        <p class="saldo_show">SALDO</p>
+    </div>
+
+    <div class="modal_deposit hidden modal">
+        <button class="close_modal">&times;</button>
+        <h2 class="modal_item">DEPOSITAR SALDO</h2>
+        <p class="modal_item">
+            Aqui puedes depositar saldo
+        </p>
+        <input class="input_deposit modal_item" type="number" id="deposit_qty" name="deposit_input" required><br><br>
+        <button class="btn_input_depositar btn_dep_wdr modal_item">DEPOSITAR</button>
+        <h3 class="new_saldo modal_item hidden">Tu nuevo saldo es $$$</h3>
+    </div>
+
+    <div class="modal_withdraw hidden modal">
+        <button class="close_modal">&times;</button>
+        <h2>RETIRAR SALDO</h2>
+        <p>
+            Aqui puedes retirar saldo
+        </p>
+        <input class="input_withdraw" type="number" id="withdraw_qty" name="withdraw_input" required><br><br>
+        <button class="btn_input_retirar btn_dep_wdr">RETIRAR</button>
+        <h3 class="new_saldo2 modal_item hidden">Tu nuevo saldo es $$$</h3>
+
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script type="module" src="/src/menu.js"></script>
+
+</body>
+</html>
